@@ -28,8 +28,8 @@ jobs:
           SSH_INFO: ${{ secrets.SSH_INFO }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           MAIL: ${{ secrets.MAIL }}
-          PUSH: ${{ telegram }}
-          TELEGRAM_CHAT_ID: ${{ 6645224052 }}
-          TELEGRAM_BOT_TOKEN: ${{ 7743723642:AAEheb0VKingHT3ZX3IGh-QxTRSMIFh9eKg }}
+          PUSH: ${{ secrets.telegram }}
+          TELEGRAM_CHAT_ID: ${{ secrets.6645224052 }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.7743723642:AAEheb0VKingHT3ZX3IGh-QxTRSMIFh9eKg }}
           
         run: python run.py
